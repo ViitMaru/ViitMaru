@@ -2,21 +2,22 @@
 <html lang="ro">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ViitMaru | Fructe și produse din fructe</title>
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="fb065abf-8fa0-4232-b737-d98fc9158c79.png"
-    >
+    <link rel="icon" type="image/png"
+        href="fb065abf-8fa0-4232-b737-d98fc9158c79.png">
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Font modern -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 
@@ -25,21 +26,17 @@
 
     <!-- ================= HEADER ================= -->
 
-    <header class="site-header">
+    <header class="header">
 
-        <div class="header-inner">
-
-
-            <!-- NUMELE SITE-ULUI -->
-
-            <a href="#acasa" class="site-name">
-                ViitMaru
-            </a>
-
+        <div class="header-top">
 
             <!-- NAVIGARE -->
 
             <nav class="navigation">
+
+                <a href="#acasa">
+                    ViitMaru
+                </a>
 
                 <a href="#acasa">
                     Acasă
@@ -67,7 +64,7 @@
                 <input
                     type="text"
                     id="searchInput"
-                    placeholder="Caută..."
+                    placeholder="Caută produse..."
                 >
 
                 <button id="searchButton">
@@ -75,7 +72,6 @@
                 </button>
 
             </div>
-
 
         </div>
 
@@ -90,19 +86,17 @@
 
         <!-- ================= ACASĂ ================= -->
 
-        <section id="acasa" class="home-section">
+        <section id="acasa" class="hero">
 
-            <div class="home-content">
+            <div class="hero-content">
 
+                <!-- LOGO MIC -->
 
-                <div class="main-logo">
-
-                    <img
-                        src="fb065abf-8fa0-4232-b737-d98fc9158c79.png"
-                        alt="Logo ViitMaru"
-                    >
-
-                </div>
+                <img
+                    src="fb065abf-8fa0-4232-b737-d98fc9158c79.png"
+                    alt="Logo ViitMaru"
+                    class="main-logo"
+                >
 
 
                 <h1>
@@ -114,7 +108,6 @@
                     Fructe și produse din fructe
                 </p>
 
-
             </div>
 
         </section>
@@ -125,10 +118,9 @@
 
         <section id="produse" class="products-section">
 
-            <div class="content-container">
+            <div class="container">
 
-
-                <div class="section-header">
+                <div class="section-heading">
 
                     <h2>
                         Produsele noastre
@@ -141,30 +133,26 @@
                 </div>
 
 
-
                 <div class="products-grid">
 
 
-                    <!-- PRODUS -->
+                    <!-- PRODUS 1 -->
 
                     <article class="product-card">
 
-                        <div class="product-photo">
-
-                            <span>
-                                FOTO
-                            </span>
-
+                        <div class="product-image">
+                            <span>Imagine produs</span>
                         </div>
 
-                        <div class="product-details">
+                        <div class="product-content">
 
                             <h3>
                                 Suc de mere
                             </h3>
 
                             <p>
-                                Suc obținut din mere.
+                                Suc obținut din mere,
+                                cu gust natural.
                             </p>
 
                             <a href="#contact">
@@ -177,26 +165,23 @@
 
 
 
-                    <!-- PRODUS -->
+                    <!-- PRODUS 2 -->
 
                     <article class="product-card">
 
-                        <div class="product-photo">
-
-                            <span>
-                                FOTO
-                            </span>
-
+                        <div class="product-image">
+                            <span>Imagine produs</span>
                         </div>
 
-                        <div class="product-details">
+                        <div class="product-content">
 
                             <h3>
                                 Mere
                             </h3>
 
                             <p>
-                                Mere disponibile în funcție de sezon.
+                                Mere disponibile în
+                                funcție de sezon.
                             </p>
 
                             <a href="#contact">
@@ -209,26 +194,52 @@
 
 
 
-                    <!-- PRODUS -->
+                    <!-- PRODUS 3 -->
 
                     <article class="product-card">
 
-                        <div class="product-photo">
-
-                            <span>
-                                FOTO
-                            </span>
-
+                        <div class="product-image">
+                            <span>Imagine produs</span>
                         </div>
 
-                        <div class="product-details">
+                        <div class="product-content">
 
                             <h3>
                                 Produse din fructe
                             </h3>
 
                             <p>
-                                Produse realizate din fructe.
+                                Produse realizate
+                                din fructe.
+                            </p>
+
+                            <a href="#contact">
+                                Vezi detalii →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUS 4 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+                            <span>Imagine produs</span>
+                        </div>
+
+                        <div class="product-content">
+
+                            <h3>
+                                Fructe de sezon
+                            </h3>
+
+                            <p>
+                                Fructe disponibile
+                                în funcție de sezon.
                             </p>
 
                             <a href="#contact">
@@ -252,9 +263,9 @@
 
         <section id="despre" class="about-section">
 
-            <div class="content-container">
+            <div class="container">
 
-                <div class="section-header">
+                <div class="section-heading">
 
                     <h2>
                         Despre ViitMaru
@@ -288,10 +299,9 @@
 
         <section id="contact" class="contact-section">
 
-            <div class="content-container">
+            <div class="container">
 
-
-                <div class="section-header">
+                <div class="section-heading">
 
                     <h2>
                         Contact
@@ -308,7 +318,7 @@
                 <div class="contact-grid">
 
 
-                    <div class="contact-box">
+                    <div class="contact-card">
 
                         <h3>
                             Telefon
@@ -322,7 +332,7 @@
 
 
 
-                    <div class="contact-box">
+                    <div class="contact-card">
 
                         <h3>
                             Email
@@ -336,16 +346,15 @@
 
 
 
-                    <div class="contact-box">
+                    <div class="contact-card">
 
                         <h3>
                             Informații
-
                         </h3>
 
                         <p>
                             Pentru detalii despre produse,
-                            contactează-ne.
+                            ne poți contacta.
                         </p>
 
                     </div>
@@ -364,9 +373,9 @@
 
     <!-- ================= FOOTER ================= -->
 
-    <footer class="site-footer">
+    <footer class="footer">
 
-        <div class="footer-inner">
+        <div class="container footer-content">
 
 
             <div>
@@ -423,18 +432,16 @@
 
             </div>
 
-
         </div>
 
 
         <div class="footer-bottom">
 
-            © 2026 ViitMaru
+            © 2026 ViitMaru. Toate drepturile rezervate.
 
         </div>
 
     </footer>
-
 
 
     <script src="script.js"></script>
