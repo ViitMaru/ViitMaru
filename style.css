@@ -1,6 +1,6 @@
-/* =========================
-   RESET
-========================= */
+/* ========================================
+   SETĂRI GENERALE
+======================================== */
 
 * {
     margin: 0;
@@ -13,301 +13,357 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    background: #fff;
+    font-family: "Inter", Arial, sans-serif;
+    background: #ffffff;
+    color: #222222;
     line-height: 1.6;
 }
 
 
-/* =========================
+/* ========================================
    HEADER
-========================= */
+======================================== */
 
-.site-header {
-    background: #fff;
-    border-bottom: 1px solid #e5e5e5;
+.header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
 }
 
-.header-inner {
-    width: min(1200px, 92%);
+
+/* zona de sus */
+
+.header-top {
+    width: 94%;
+    max-width: 1400px;
+
+    min-height: 78px;
+
     margin: auto;
-
-    min-height: 72px;
-
-    display: flex;
-    align-items: center;
-
-    gap: 35px;
-}
-
-
-/* NUME */
-
-.site-name {
-    color: #222;
-    text-decoration: none;
-
-    font-size: 25px;
-    font-weight: 700;
-
-    white-space: nowrap;
-}
-
-
-/* NAVIGARE */
-
-.navigation {
-    margin-left: auto;
-
-    display: flex;
-    align-items: center;
-
-    gap: 30px;
-}
-
-.navigation a {
-    color: #333;
-    text-decoration: none;
-
-    font-size: 15px;
-
-    transition: 0.2s;
-}
-
-.navigation a:hover {
-    color: #777;
-}
-
-
-/* CĂUTARE */
-
-.search {
-    display: flex;
-
-    border: 1px solid #d8d8d8;
-    border-radius: 4px;
-
-    overflow: hidden;
-}
-
-.search input {
-    width: 145px;
-
-    padding: 9px 11px;
-
-    border: none;
-    outline: none;
-
-    font-size: 14px;
-}
-
-.search button {
-    width: 40px;
-
-    border: none;
-    border-left: 1px solid #ddd;
-
-    background: #fff;
-
-    cursor: pointer;
-}
-
-
-/* =========================
-   ZONA PRINCIPALĂ
-========================= */
-
-.home-section {
-    min-height: 520px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    text-align: center;
-
-    border-bottom: 1px solid #eee;
+    position: relative;
 }
 
-.home-content {
+
+/* ========================================
+   MENIUL
+======================================== */
+
+.navigation {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 42px;
+}
+
+
+.navigation a {
+    text-decoration: none;
+
+    color: #202020;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+
+.navigation a:hover {
+    color: #6d8f3d;
+}
+
+
+/* ========================================
+   CĂUTAREA
+======================================== */
+
+.search {
+    position: absolute;
+
+    right: 0;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #d7d7d7;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+.search input {
+    width: 190px;
+
+    padding: 11px 13px;
+
+    border: none;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+
+.search button {
+    width: 45px;
+
+    height: 42px;
+
+    border: none;
+
+    border-left: 1px solid #eeeeee;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+/* ========================================
+   CONTAINER CENTRAL
+======================================== */
+
+.container {
+    width: 92%;
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   PAGINA PRINCIPALĂ
+======================================== */
+
+.hero {
+    min-height: 440px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.hero-content {
+    display: flex;
+
     flex-direction: column;
 
     align-items: center;
 }
 
 
-/* LOGO PRINCIPAL */
+/* ========================================
+   LOGO PRINCIPAL
+======================================== */
 
-.main-logo img {
-    width: 145px;
-    height: 145px;
+.main-logo {
+    width: 95px;
+    height: 95px;
 
     object-fit: contain;
+
+    margin-bottom: 12px;
 }
 
 
-.home-content h1 {
-    margin-top: 10px;
+.hero h1 {
+    font-size: 44px;
 
-    font-size: 48px;
-    font-weight: 700;
+    font-weight: 800;
+
+    letter-spacing: -1px;
 }
 
 
-.home-content p {
+.hero p {
     margin-top: 5px;
 
-    color: #777;
+    color: #777777;
 
-    font-size: 18px;
+    font-size: 17px;
 }
 
 
-/* =========================
-   CONTAINER GENERAL
-========================= */
-
-.content-container {
-    width: min(1120px, 92%);
-    margin: auto;
-}
-
-
-/* =========================
-   TITLURI
-========================= */
-
-.section-header {
-    margin-bottom: 40px;
-}
-
-.section-header h2 {
-    font-size: 32px;
-    font-weight: 600;
-
-    margin-bottom: 8px;
-}
-
-.section-header p {
-    color: #777;
-}
-
-
-/* =========================
+/* ========================================
    PRODUSE
-========================= */
+======================================== */
 
 .products-section {
-    padding: 85px 0;
+    padding: 70px 0;
 }
+
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+
+.section-heading h2 {
+    font-size: 32px;
+
+    font-weight: 800;
+
+    margin-bottom: 7px;
+}
+
+
+.section-heading p {
+    color: #777777;
+
+    font-size: 15px;
+}
+
+
+/* GRID PRODUSE */
 
 .products-grid {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 25px;
+    gap: 24px;
 }
 
 
-.product-card {
-    background: #fff;
+/* CARD PRODUS */
 
-    border: 1px solid #ddd;
+.product-card {
+    border: 1px solid #dddddd;
+
+    background: #ffffff;
 
     transition: 0.2s;
 }
 
-.product-card:hover {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 
+.product-card:hover {
     transform: translateY(-3px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 
-/* FOTO PRODUS */
+/* imagine */
 
-.product-photo {
+.product-image {
+    width: 100%;
+
     height: 230px;
 
     background: #f4f4f4;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 }
 
-.product-photo span {
-    color: #999;
 
-    font-size: 14px;
+.product-image span {
+    color: #999999;
+
+    font-size: 13px;
 }
 
 
-/* DETALII PRODUS */
+/* informații */
 
-.product-details {
+.product-content {
     padding: 22px;
 }
 
-.product-details h3 {
+
+.product-content h3 {
     font-size: 20px;
+
+    font-weight: 700;
 
     margin-bottom: 8px;
 }
 
-.product-details p {
-    color: #666;
+
+.product-content p {
+    color: #666666;
 
     font-size: 14px;
 
     margin-bottom: 15px;
 }
 
-.product-details a {
-    color: #222;
+
+.product-content a {
+    color: #222222;
 
     text-decoration: none;
 
     font-size: 14px;
-    font-weight: 600;
+
+    font-weight: 700;
 }
 
 
-/* =========================
-   DESPRE
-========================= */
+/* ========================================
+   DESPRE NOI
+======================================== */
 
 .about-section {
-    background: #f7f7f7;
+    background: #f7f7f5;
 
-    padding: 85px 0;
+    padding: 70px 0;
 }
+
 
 .about-text {
-    max-width: 750px;
-
-    color: #555;
+    max-width: 760px;
 
     font-size: 16px;
+
+    color: #555555;
 }
+
 
 .about-text p {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 
-/* =========================
+/* ========================================
    CONTACT
-========================= */
+======================================== */
 
 .contact-section {
-    padding: 85px 0;
+    padding: 70px 0;
 }
 
 
@@ -316,54 +372,56 @@ body {
 
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 25px;
+    gap: 24px;
 }
 
 
-.contact-box {
-    border: 1px solid #ddd;
+.contact-card {
+    border: 1px solid #dddddd;
 
     padding: 25px;
+
+    background: #ffffff;
 }
 
 
-.contact-box h3 {
+.contact-card h3 {
     font-size: 18px;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 
-.contact-box a {
-    color: #333;
+.contact-card a {
+    color: #333333;
 
     text-decoration: none;
-}
-
-
-.contact-box p {
-    color: #666;
 
     font-size: 14px;
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+.contact-card p {
+    color: #666666;
 
-.site-footer {
-    background: #202020;
-
-    color: #fff;
-
-    padding: 55px 0 0;
+    font-size: 14px;
 }
 
-.footer-inner {
-    width: min(1120px, 92%);
-    margin: auto;
 
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background: #202020;
+
+    color: #ffffff;
+
+    padding-top: 50px;
+}
+
+
+.footer-content {
     display: grid;
 
     grid-template-columns: 2fr 1fr 1fr;
@@ -372,147 +430,173 @@ body {
 }
 
 
-.footer-inner h3 {
+.footer h3 {
     font-size: 22px;
 
     margin-bottom: 8px;
 }
 
 
-.footer-inner h4 {
-    margin-bottom: 15px;
+.footer h4 {
+    margin-bottom: 14px;
 }
 
 
-.footer-inner p {
-    color: #aaa;
+.footer p {
+    color: #aaaaaa;
 
     font-size: 14px;
 }
 
 
-.footer-inner a {
+.footer a {
     display: block;
 
-    color: #aaa;
+    color: #aaaaaa;
 
     text-decoration: none;
 
     font-size: 14px;
 
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 }
 
 
-.footer-inner a:hover {
-    color: #fff;
+.footer a:hover {
+    color: #ffffff;
 }
 
 
 .footer-bottom {
-    width: min(1120px, 92%);
-    margin: 45px auto 0;
+    width: 92%;
 
-    padding: 20px 0;
+    max-width: 1120px;
+
+    margin: 40px auto 0;
+
+    padding: 18px 0;
 
     border-top: 1px solid #383838;
 
-    color: #777;
+    color: #777777;
 
     font-size: 13px;
 }
 
 
-/* =========================
+/* ========================================
    TABLETĂ
-========================= */
+======================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
 
-    .header-inner {
-        flex-wrap: wrap;
+    .header-top {
+        justify-content: flex-start;
 
-        padding: 12px 0;
+        gap: 25px;
     }
 
     .navigation {
-        order: 3;
-
-        width: 100%;
-
-        margin-left: 0;
-
-        justify-content: center;
-
-        padding-bottom: 5px;
+        gap: 22px;
     }
 
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .navigation a {
+        font-size: 15px;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
+    .search {
+        position: static;
+    }
+
+    .search input {
+        width: 140px;
     }
 
 }
 
 
-/* =========================
+/* ========================================
    TELEFON
-========================= */
+======================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 
-    .header-inner {
+    .header-top {
+        min-height: auto;
+
+        padding: 15px 0;
+
+        flex-direction: column;
+
         gap: 15px;
     }
+
 
     .navigation {
-        gap: 15px;
+        flex-wrap: wrap;
+
+        gap: 15px 25px;
     }
 
-    .navigation a {
-        font-size: 13px;
-    }
 
     .search {
-        display: none;
+        position: static;
     }
 
-    .home-section {
-        min-height: 430px;
-    }
-
-    .main-logo img {
-        width: 115px;
-        height: 115px;
-    }
-
-    .home-content h1 {
-        font-size: 38px;
-    }
-
-    .home-content p {
-        font-size: 16px;
-    }
 
     .products-grid {
         grid-template-columns: 1fr;
     }
 
-    .section-header h2 {
-        font-size: 28px;
+
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 
-    .footer-inner {
+
+    .footer-content {
         grid-template-columns: 1fr;
 
         gap: 35px;
     }
 
 }
-        display: none;
+
+
+/* ========================================
+   TELEFON MIC
+======================================== */
+
+@media (max-width: 450px) {
+
+    .navigation {
+        gap: 10px 16px;
+    }
+
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+
+    .hero {
+        min-height: 380px;
+    }
+
+
+    .main-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .hero p {
+        font-size: 15px;
     }
 
 }
