@@ -568,7 +568,7 @@ body {
    TELEFON MIC
 ======================================== */
 
-@media (max-width: 450px) {
+@media (max-width: 120px) {
 
     .header-logo {
         width: 110px;
