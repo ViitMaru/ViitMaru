@@ -1,140 +1,405 @@
 <!DOCTYPE html>
+
 <html lang="ro">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ViitMaru</title>
+```
+<meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style.css">
-   <link rel="icon" type="image/png" href="fb065abf-8fa0-4232-b737-d98fc9158c79.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ViitMaru | Fructe și produse din fructe</title>
+
+<!-- Favicon / logo -->
+<link rel="icon" type="image/png" href="fb065abf-8fa0-4232-b737-d98fc9158c79.png">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
 
-    <div class="container">
-        
+```
+<!-- ==================== HEADER ==================== -->
 
-            <button id="buton">Apasă aici</button>
-        </main>
+<header class="header">
+
+    <nav class="navbar">
+
+        <!-- Logo + nume -->
+        <a href="#acasa" class="brand">
+
+            <img
+                src="fb065abf-8fa0-4232-b737-d98fc9158c79.png"
+                alt="Logo ViitMaru"
+                class="logo"
+            >
+
+            <span>ViitMaru</span>
+
+        </a>
+
+
+        <!-- Meniu -->
+        <div class="nav-links">
+
+            <a href="#acasa">Acasă</a>
+
+            <a href="#produse">Produse</a>
+
+            <a href="#despre">Despre noi</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==================== CONȚINUT PRINCIPAL ==================== -->
+
+<main>
+
+
+    <!-- ==================== ACASĂ ==================== -->
+
+    <section id="acasa" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small-title">
+                VIITMARU
+            </p>
+
+            <h1>
+                Fructe locale.
+                <br>
+                Produse făcute cu grijă.
+            </h1>
+
+            <p class="hero-description">
+                Descoperă fructele și produsele noastre,
+                realizate cu grijă din materie primă de calitate.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#produse" class="button primary-button">
+                    Vezi produsele
+                </a>
+
+                <a href="#contact" class="button secondary-button">
+                    Contactează-ne
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== PRODUSE ==================== -->
+
+    <section id="produse" class="section products-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                CE OFERIM
+            </p>
+
+            <h2>
+                Produsele noastre
+            </h2>
+
+            <p>
+                Produse realizate din fructe locale,
+                cu atenție la calitate.
+            </p>
+
+        </div>
+
+
+        <div class="products-grid">
+
+
+            <!-- PRODUS 1 -->
+
+            <article class="product-card">
+
+                <div class="product-icon">
+                    🧃
+                </div>
+
+                <h3>
+                    Suc de mere
+                </h3>
+
+                <p>
+                    Suc obținut din mere locale,
+                    potrivit pentru cei care apreciază
+                    gustul natural al fructelor.
+                </p>
+
+                <a href="#contact" class="product-link">
+                    Cere informații →
+                </a>
+
+            </article>
+
+
+            <!-- PRODUS 2 -->
+
+            <article class="product-card">
+
+                <div class="product-icon">
+                    🍓
+                </div>
+
+                <h3>
+                    Produse din fructe
+                </h3>
+
+                <p>
+                    Produse realizate din fructe,
+                    pregătite cu grijă și atenție
+                    la calitate.
+                </p>
+
+                <a href="#contact" class="product-link">
+                    Cere informații →
+                </a>
+
+            </article>
+
+
+            <!-- PRODUS 3 -->
+
+            <article class="product-card">
+
+                <div class="product-icon">
+                    🍎
+                </div>
+
+                <h3>
+                    Fructe locale
+                </h3>
+
+                <p>
+                    Fructe provenite din producție locală,
+                    disponibile în funcție de sezon.
+                </p>
+
+                <a href="#contact" class="product-link">
+                    Cere informații →
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== DESPRE NOI ==================== -->
+
+    <section id="despre" class="section about-section">
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <p class="section-label">
+                    DESPRE VIITMARU
+                </p>
+
+                <h2>
+                    Din fructe locale,
+                    cu grijă pentru calitate.
+                </h2>
+
+                <p>
+                    ViitMaru este o mică afacere locală
+                    dedicată fructelor și produselor
+                    realizate din acestea.
+                </p>
+
+                <p>
+                    Punem accent pe folosirea unor fructe
+                    de calitate și pe realizarea produselor
+                    cu grijă și atenție.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <img
+                    src="fb065abf-8fa0-4232-b737-d98fc9158c79.png"
+                    alt="Logo ViitMaru"
+                >
+
+                <h3>
+                    ViitMaru
+                </h3>
+
+                <p>
+                    Fructe și produse locale
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== CONTACT ==================== -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                CONTACT
+            </p>
+
+            <h2>
+                Hai să vorbim
+            </h2>
+
+            <p>
+                Pentru informații, produse sau comenzi,
+                ne poți contacta.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <a href="tel:0768368277" class="contact-card">
+
+                <span class="contact-icon">
+                    📞
+                </span>
+
+                <span>
+
+                    <strong>
+                        Telefon
+                    </strong>
+
+                    <small>
+                        0768 368 277
+                    </small>
+
+                </span>
+
+            </a>
+
+
+            <a
+                href="mailto:iliescuserban31@gmail.com"
+                class="contact-card"
+            >
+
+                <span class="contact-icon">
+                    ✉️
+                </span>
+
+                <span>
+
+                    <strong>
+                        Email
+                    </strong>
+
+                    <small>
+                        iliescuserban31@gmail.com
+                    </small>
+
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==================== FOOTER ==================== -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <strong>
+                ViitMaru
+            </strong>
+
+            <p>
+                Fructe și produse din fructe.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#acasa">
+                Acasă
+            </a>
+
+            <a href="#produse">
+                Produse
+            </a>
+
+            <a href="#despre">
+                Despre noi
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
 
     </div>
 
-    <script src="script.js"></script>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ro">
+    <div class="copyright">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        © 2026 ViitMaru. Toate drepturile rezervate.
 
-    <title>Numele Afacerii | Fructe și produse naturale</title>
+    </div>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <header>
-        <nav>
-            <h2>Numele Afacerii</h2>
-
-            <div>
-                <a href="#acasa">Acasă</a>
-                <a href="#produse">Produse</a>
-                <a href="#despre">Despre noi</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
+</footer>
 
 
-    <main>
 
-        <section id="acasa" class="hero">
-
-            <h1>Fructe locale și produse naturale</h1>
-
-            <p>
-                Produse realizate cu grijă din fructe de calitate.
-            </p>
-
-            <a href="#produse" class="buton">
-                Vezi produsele
-            </a>
-
-        </section>
-
-
-        <section id="produse">
-
-            <h2>Produsele noastre</h2>
-
-            <div class="produse">
-
-
-                <div class="produs">
-                    <h3>🧃 Suc de mere</h3>
-                    <p>Suc obținut din mere locale.</p>
-                </div>
-
-                <div class="produs">
-                    <h3>🍓 Produse din fructe</h3>
-                    <p>Produse realizate din fructe.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="despre">
-
-            <h2>Despre noi</h2>
-
-            <p>
-                Suntem o mică afacere locală care pune accent
-                pe fructe de calitate și produse realizate cu grijă.
-            </p>
-
-        </section>
-
-
-        <section id="contact">
-
-            <h2>Contact</h2>
-
-            <p>
-                Pentru comenzi și informații, ne poți contacta.
-            </p>
-
-            <p>
-                Telefon: 0768 368 277
-            </p>
-
-            <p>
-                Email: iliescuserban31@gmail.com
-            </p>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <p>
-            © 2026 Numele Afacerii
-        </p>
-
-    </footer>
-
-
-    <script src="script.js"></script>
+<!-- JavaScript -->
+<script src="script.js"></script>
+```
 
 </body>
 
